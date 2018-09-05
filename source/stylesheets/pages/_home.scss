@@ -1,17 +1,113 @@
-#home {
-  background-color: #D23333;
-  color: white;
+body {
+  background-color: #d4cebd;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  font-family: 'Alegreya Sans SC';
+  font-size: 36px;
+  font-style: Light;
+  line-height: 36px;
+}
+
+a {
+  color: black;
+}
+
+a:hover, a:visited, a:active, a:link {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: 'Oleo Script';
+  font-size: 36px;
+  font-style: Bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#home{
   height: 100vh;
+  position: relative;
+}
+
+.home-logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 50px;
+}
+
+.home-personal {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.home-details {
+  margin-left: 15px;
+}
+
+.home-work {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.home-work {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.home-next {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.profile {
+  width: 900px;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 450px);
+}
+
+.home-2 {
+  opacity: 0;
+}
+
+.home-languages {
+  position: absolute;
+  top: calc(55% - 400px);
+  left: calc(50% - 400px);
+  height: 800px;
+  width: 800px;
+}
+
+.home-languages-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
+
+.home-languages-container {
+  border-radius: 50%;
+  position: relative;
+}
+
+.code-languages {
+  position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: -50px;
+  transition: transform 3000ms ease-in-out;
+}
+
+.deg360 { transform: rotate(360deg) translate(400px) rotate(-360deg); }
+.deg180 { transform: rotate(180deg) translate(400px) rotate(-180deg); }
+.deg225 { transform: rotate(225deg) translate(400px) rotate(-225deg); }
+.deg270 { transform: rotate(270deg) translate(400px) rotate(-270deg); }
+.deg315 { transform: rotate(315deg) translate(400px) rotate(-315deg); }
