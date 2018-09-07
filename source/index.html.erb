@@ -2,11 +2,13 @@
 title: Magnus S. Remøe - Full stack developer
 ---
 
-<div id="home">
-  <div class="home-logo">
+<div id="wrapper">
+
+  <div class="logo">
     <h1>MSR</h1>
   </div>
-  <div class="home-info">
+
+  <div id="home">
     <div class="home-personal home-1">
       <div class="home-name">
         <h1>Magnus S. Remøe</h1>
@@ -38,7 +40,120 @@ title: Magnus S. Remøe - Full stack developer
       <a href=""><p>What do I do?</p></a>
     </div>
     <div class="home-next home-2 hidden">
-      <p>Background</p>
+      <a href=""><p>Background</p></a>
+    </div>
+  </div>
+
+  <div class="background hidden" id="background">
+    <div class="background-container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="background-box">
+            <div class="background-box-content hidden opacity0">
+              <h2>Education</h2>
+              <div class="background-box-element lewagon">
+                <%= image_tag "lewagon-crop.png" %>
+                <p class="background-ntnu">2018</p>
+                <h4>Le Wagon - Coding bootcamp</h4>
+                <p>Full stack developer</p>
+                <p class="background-description">Ruby, Rails, CSS, Javascript, HTML</p>
+              </div>
+              <div class="background-box-element">
+                <%= image_tag "Logo-Ntnu.svg" %>
+                <p>2009 - 2014</p>
+                <h4>NTNU - Norwegian University of Science and Technology</h4>
+                <p>M. Sc. Materials Science and Engineering</p>
+                <p class="background-description">Alloy development, welding, simulations, Matlab</p>
+              </div>
+            </div>
+
+            <div class="project-content hidden opacity0">
+              <h2>Trippytune</h2>
+              <a href="https://www.trippytune.com" target="_blank">
+                <div class="project-image" id="trippytune">
+                  <div class="background-text-position">
+                      <p class="opacity0 background-box-text"></p>
+                  </div>
+                </div>
+              </a>
+              <p class="project-text">Trippytune was founded during the Le Wagon bootcamp, and is an attempt to redefine music communities online. It is already functional, but currently just a prototype. A new version of the platform is currently in progress. Trippytune is being built with Ruby on Rails.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="background-box">
+            <div class="background-box-content hidden opacity0">
+              <h2>Experience</h2>
+              <div class="background-box-element">
+                <%= image_tag "surfing-a-sea-turtle-red.svg" %>
+                <p class="background-ntnu">2018</p>
+                <h4>Remøe Websurf</h4>
+                <p>Web development</p>
+                <p class="background-description">Back-end, front-end, SEO, Shopify, social networks</p>
+              </div>
+              <div class="background-box-element">
+                <%= image_tag "Logo-Ntnu.svg" %>
+                <p class="background-ntnu">2014 - 2017</p>
+                <h4>NTNU - Norwegian University of Science and Technology</h4>
+                <p>PhD Materials Science and Engineering</p>
+                <p class="background-description">Aluminium alloy development, electron microscopy, Al-Mg-Si, Matlab</p>
+              </div>
+            </div>
+
+            <div class="project-content hidden opacity0">
+              <h2>Silver Island Jewellery</h2>
+              <a href="https://silverisland.org" target="_blank">
+                <div class="project-image" id="silverisland">
+                  <div class="background-text-position">
+                      <p class="opacity0 background-box-text"></p>
+                  </div>
+                </div>
+              </a>
+              <p class="project-text">Silver Island Jewellery is a side project, and an eCommerce site build with Shopify. My work has been to set up the site according to the style preferences of the site owner, customize the theme code, and optimize for SEO. The work is currently ongoing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="background-box">
+            <div class="background-box-content hidden opacity0">
+              <h2>Hobbies</h2>
+              <div class="background-box-element hobbies" id="surf">
+                <div class="background-text-position">
+                  <p class="opacity0 background-box-text">Surf</p>
+                </div>
+              </div>
+              <div class="background-box-element hobbies" id="travel">
+                <div class="background-text-position">
+                  <p class="opacity0 background-box-text">Travel</p>
+                </div>
+              </div>
+              <div class="background-box-element hobbies" id="music">
+                <div class="background-text-position">
+                  <p class="opacity0 background-box-text">Music</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content hidden opacity0">
+              <h2>Bored</h2>
+              <a href="https://bored-cestbalez.herokuapp.com/" target="_blank">
+                <div class="project-image" id="bored">
+                  <div class="background-text-position">
+                      <p class="opacity0 background-box-text"></p>
+                  </div>
+                </div>
+              </a>
+              <p class="project-text">Bored is a project I built for fun with a couple of friends. It is inspired by the new sharing economy, and is an experiment where people can rent out their various types of boards, such as surfboards, skateboards, snowboards, etc. This project was built with Ruby on Rails.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-next">
+      <a href=""><p>Projects</p></a>
+    </div>
+    <div class="home-next hidden">
+      <a href=""><p>Get in touch</p></a>
     </div>
   </div>
 </div>

@@ -8,10 +8,9 @@ function fadeOutHome() {
   const classNames = ['deg360', 'deg180', 'deg225', 'deg270', 'deg315'];
   const stepSize = 0.025;
 
-  // Initializing eventListener function
+  // Initializing eventListener function for first button
   buttonOne.addEventListener('click', (event) => {
   // Add class to start animation
-  console.log(codeLanguages);
     codeLanguages.forEach(function(e, i) {
       e.classList.add(classNames[i]);
     });
@@ -36,5 +35,63 @@ function fadeOutHome() {
         });
       }
     }, 50);
+  });
+}
+
+function toBackground() {
+  const buttonTwo = document.querySelector('.home-next.home-2');
+  const home = document.getElementById('home');
+  const background = document.getElementById('background');
+  const backgroundBox = document.querySelectorAll('.background-box');
+  const backgroundContent = document.querySelectorAll('.background-box-content')
+  buttonTwo.addEventListener('click', (event) => {
+    event.preventDefault();
+    background.classList.remove('hidden');
+    home.classList.add('opacity0');
+    setTimeout(function() {
+      background.classList.add('opacity1');
+
+      backgroundBox.forEach(function(e) {
+        e.classList.add('box-height');
+      });
+    }, 500);
+    setTimeout(function() {
+      backgroundContent.forEach(function(e) {
+        e.classList.remove('hidden');
+        setTimeout(function() {
+          e.classList.remove('opacity0')
+        }, 100);
+      });
+    }, 2500);
+  });
+}
+
+function fromBackground() {
+  console.log('background');
+  const backgroundBox = document.querySelectorAll('.background-box');
+  const backgroundContent = document.querySelectorAll('.background-box-content');
+  const buttonThree = document.querySelector('.background .home-next');
+  const projectContent = document.querySelectorAll('.project-content');
+  buttonThree.addEventListener('click', (event) => {
+    event.preventDefault();
+    setTimeout(function() {
+      backgroundBox.forEach(function(e) {
+        e.classList.add('box-height-2');
+      });
+    }, 1750);
+    backgroundContent.forEach(function(e) {
+      e.classList.add('opacity-transition', 'opacity0');
+      setTimeout(function() {
+        e.classList.add('hidden');
+      }, 2500);
+    });
+    setTimeout(function() {
+      projectContent.forEach(function(e) {
+        e.classList.remove('hidden');
+        setTimeout(function() {
+          e.classList.remove('opacity0')
+        }, 100);
+      });
+    }, 4000);
   });
 }

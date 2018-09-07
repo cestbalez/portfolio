@@ -1,0 +1,37 @@
+#trippytune {
+  background: url('../../images/trippytune.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#bored {
+  background: url('../../images/bored.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#silverisland {
+  background: url('../../images/silverisland.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.project-image {
+  height: 175px;
+}
+
+.background-box.box-height-2 {
+  display: flex;
+  align-items: center;
+}
+
+.project-content h2 {
+  margin-top: 0;
+  font-size: 34px;
+}
+
+.project-text {
+  text-align: justify;
+  font-family: 'Alegreya Sans SC';
+  font-weight: 300;
+}

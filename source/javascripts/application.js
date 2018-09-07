@@ -3,3 +3,5 @@
 //= require_tree .
 
 fadeOutHome();
+toBackground();
+fromBackground();

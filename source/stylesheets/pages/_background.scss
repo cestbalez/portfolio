@@ -1,0 +1,128 @@
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.background-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-box {
+  // border: solid 2px #000;
+  background-color: #A27E6F;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  text-align: center;
+  padding: 20px;
+  height: 0px;
+  width: 0px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.36);
+  transition: opacity 2s ease-in-out;
+  transition: height 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.background-box-element {
+  padding: 20px;
+}
+
+.background-ntnu {
+  margin-top: -10px;
+}
+
+.background-box img {
+  height: 50px;
+  width: 50px;
+}
+
+.lewagon img {
+  height: 50px;
+  width: auto;
+}
+
+.background-box h2 {
+  font-family: 'Alegreya Sans SC';
+}
+
+.background-box h4 {
+  font-family: 'Alegreya Sans SC';
+  font-size: 22px;
+}
+
+.background-box p {
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+.background-description {
+  font-style: italic;
+  font-size: 16px !important;
+}
+
+.box-height {
+  height: 600px;
+  width: 400px;
+  transition: height 2s ease-in-out;
+}
+
+.box-height-2 {
+  height: 440px;
+}
+
+#surf {
+  background: url('../../images/surf-crop-resize.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#travel {
+  background: url('../../images/travel-crop-resize.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#music {
+  background: url('../../images/music-crop-resize.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.background-box-element.hobbies, .project-image {
+  height: 150px;
+  width: 94%;
+  border-radius: 5px;
+  margin: 15px auto;
+  padding: 0;
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.36);
+}
+
+.background-text-position {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-box-element:hover, .project-image:hover {
+  .background-text-position {
+    background:rgba(176,152,138,0.7);
+  }
+  .background-box-text {
+    opacity: 1;
+  }
+}
