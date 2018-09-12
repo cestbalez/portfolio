@@ -5,3 +5,4 @@
 fadeOutHome();
 toBackground();
 fromBackground();
+fromProjects();

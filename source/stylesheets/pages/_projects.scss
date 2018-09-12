@@ -35,3 +35,8 @@
   font-family: 'Alegreya Sans SC';
   font-weight: 300;
 }
+
+.contact.home-next {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}

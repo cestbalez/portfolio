@@ -62,6 +62,7 @@ function toBackground() {
           e.classList.remove('opacity0')
         }, 100);
       });
+      home.classList.add('hidden');
     }, 2500);
   });
 }
@@ -71,6 +72,7 @@ function fromBackground() {
   const backgroundBox = document.querySelectorAll('.background-box');
   const backgroundContent = document.querySelectorAll('.background-box-content');
   const buttonThree = document.querySelector('.background .home-next');
+  const buttonFour = document.querySelector('.contact.home-next');
   const projectContent = document.querySelectorAll('.project-content');
   buttonThree.addEventListener('click', (event) => {
     event.preventDefault();
@@ -93,5 +95,26 @@ function fromBackground() {
         }, 100);
       });
     }, 4000);
+    buttonThree.classList.add('opacity-transition', 'opacity0');
+    setTimeout(function() {
+    buttonFour.classList.add('opacity1');
+    }, 1500);
+    buttonFour.classList.remove('hidden');
+  });
+}
+
+function fromProjects() {
+  const buttonFour = document.querySelector('.contact.home-next');
+  const backgroundDiv = document.querySelector('#background');
+  const contactDiv = document.querySelector('#contact');
+  buttonFour.addEventListener('click', (event) => {
+    event.preventDefault();
+    backgroundDiv.classList.remove('opacity1');
+    backgroundDiv.classList.add('opacity-transition', 'opacity0');
+    setTimeout(function() {
+        backgroundDiv.classList.add('hidden')
+      }, 3000);
+    contactDiv.classList.remove('hidden');
+    contactDiv.classList.add('opacity-transition', 'opacity1');
   });
 }
