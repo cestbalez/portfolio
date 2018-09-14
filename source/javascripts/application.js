@@ -6,3 +6,4 @@ fadeOutHome();
 toBackground();
 fromBackground();
 fromProjects();
+initMap();
