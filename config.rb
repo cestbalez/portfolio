@@ -1,12 +1,3 @@
-require 'rack'
-require 'rack/contrib/try_static'
-
-# Serve files from the build directory
-use Rack::TryStatic,
-  root: 'build',
-  urls: %w[/],
-  try: ['.html', 'index.html', '/index.html']
-
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
