@@ -11,5 +11,4 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'rake'
-gem 'puma'
-gem 'rack-contrib'
+
