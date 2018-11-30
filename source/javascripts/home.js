@@ -109,12 +109,15 @@ function fromProjects() {
   const contactDiv = document.querySelector('#contact');
   buttonFour.addEventListener('click', (event) => {
     event.preventDefault();
-    backgroundDiv.classList.remove('opacity1');
     backgroundDiv.classList.add('opacity-transition', 'opacity0');
+    backgroundDiv.classList.remove('opacity1');
     setTimeout(function() {
         backgroundDiv.classList.add('hidden')
       }, 3000);
     contactDiv.classList.remove('hidden');
-    contactDiv.classList.add('opacity-transition', 'opacity1');
+    setTimeout(function() {
+      contactDiv.classList.add('opacity-transition', 'opacity1');
+      // contactDiv.classList.remove('opacity0');
+    }, 2000);
   });
 }
