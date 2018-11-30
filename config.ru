@@ -1,6 +1,8 @@
 require 'rack'
 require 'rack/contrib/try_static'
 
+use Rack::Head
+
 # Serve files from the build directory
 use Rack::TryStatic,
   root: 'build',
