@@ -1,8 +1,8 @@
 function fadeOutHome() {
   // Defining variables
-  let homeOne = document.querySelectorAll('.home-1');
+  const homeOne = document.querySelectorAll('.home-1');
   const buttonOne = document.querySelector('.home-next.home-1');
-  let homeTwo = document.querySelectorAll('.home-2');
+  const homeTwo = document.querySelectorAll('.home-2');
   const buttonTwo = document.querySelector('.home-next.home-2');
   const codeLanguages = document.querySelectorAll('.code-languages');
   const classNames = ['deg360', 'deg180', 'deg225', 'deg270', 'deg315'];
