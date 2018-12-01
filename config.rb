@@ -27,6 +27,9 @@ activate :directory_indexes
 # Append hashes to compiled assets
 activate :asset_hash
 
+redirect "/", to: "/index.html"
+
+
 # activate :asset_hash do |opts|
 #   opts.exts += $(.ico)
 # end
