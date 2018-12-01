@@ -27,6 +27,6 @@ activate :directory_indexes
 # Append hashes to compiled assets
 activate :asset_hash
 
-activate :asset_hash do |opts|
-  opts.exts += $(.ico)
-end
+# activate :asset_hash do |opts|
+#   opts.exts += $(.ico)
+# end
