@@ -10,7 +10,7 @@ page '/*.txt', layout: false
 
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  # activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
   set :relative_links, true
@@ -24,12 +24,3 @@ end
 # Use “pretty” URLs (without the `.html` suffix)
 activate :directory_indexes
 
-# Append hashes to compiled assets
-activate :asset_hash
-
-redirect "/", to: "/index.html"
-
-
-# activate :asset_hash do |opts|
-#   opts.exts += $(.ico)
-# end
