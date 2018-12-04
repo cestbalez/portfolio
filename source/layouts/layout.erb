@@ -15,7 +15,7 @@
   <body>
     <%= yield %>
     <%= javascript_include_tag "application" %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE-API'] %>&callback=initMap"
     async defer></script>
     <script>
     var contactform =  document.getElementById('contactform');
