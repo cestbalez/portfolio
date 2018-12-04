@@ -13,12 +13,12 @@ body {
 }
 
 a {
-  color: black;
+  color: #363636;
 }
 
 a:hover, a:visited, a:active, a:link {
   text-decoration: none;
-  color: black;
+  color: #363636;
 }
 
 h1 {
@@ -27,6 +27,7 @@ h1 {
   font-style: Bold;
   margin: 0;
   margin-bottom: 20px;
+  color: #363636 !important;
 }
 
 h2 {
@@ -236,8 +237,8 @@ h2 {
   }
 
   .logo {
-    top: calc(2.5% - 5px);
-    left: calc(5% - 5px);
+    top: calc(2.5%);
+    left: calc(5%);
     font-size: 36px;
   }
 
