@@ -7,3 +7,4 @@ toBackground();
 fromBackground();
 fromProjects();
 initMap();
+windowSizing();
