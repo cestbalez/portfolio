@@ -6,7 +6,6 @@ body {
   font-style: 100;
   line-height: 36px;
   position: relative;
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +37,8 @@ h2 {
 #wrapper{
   height: 100%;
   position: relative;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .logo {
