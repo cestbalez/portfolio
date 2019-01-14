@@ -302,9 +302,13 @@ h2 {
 
   @media screen and (min-aspect-ratio: 1600/1000) {
     #home img {
-      width: 370px;
-      left: calc(50% - 185px);
+      width: 300px;
+      left: calc(50% - 150px);
       // top: 24vh;
+    }
+
+    p {
+      font-size: 24px;
     }
 
     .home-languages {
